@@ -1,0 +1,149 @@
+CRITICAL - 2023-01-23 11:00:40 --> Class 'Modules\UserManagement\Models\RolesPermissionsModel' not found
+#0 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Security->__construct()
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-23 11:13:43 --> Class 'Modules\Users\Models\UsersModel' not found
+#0 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Security->__construct()
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-23 11:15:20 --> Class 'Modules\Users\Models\RolesPermissionsModel' not found
+#0 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Security->__construct()
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-01-23 11:15:37 --> Argument 2 passed to user_link() must be of the type array, null given, called in C:\xampp\htdocs\delcs_elective_three\app\Views\templates\sidenav.php on line 7
+#0 C:\xampp\htdocs\delcs_elective_three\app\Views\templates\sidenav.php(7): user_link('dashboard', NULL)
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('templates/siden...', NULL, true)
+#4 C:\xampp\htdocs\delcs_elective_three\app\Views\templates\index.php(8): CodeIgniter\View\View->include('templates/siden...')
+#5 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/index', Array, true)
+#8 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(50): view('templates/index', Array)
+#9 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#10 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#11 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-23 11:17:13 --> Argument 2 passed to user_link() must be of the type array, null given, called in C:\xampp\htdocs\delcs_elective_three\app\Views\templates\sidenav.php on line 7
+#0 C:\xampp\htdocs\delcs_elective_three\app\Views\templates\sidenav.php(7): user_link('dashboard', NULL)
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('templates/siden...', NULL, true)
+#4 C:\xampp\htdocs\delcs_elective_three\app\Views\templates\index.php(8): CodeIgniter\View\View->include('templates/siden...')
+#5 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/index', Array, true)
+#8 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(50): view('templates/index', Array)
+#9 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#10 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#11 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-23 11:50:45 --> Argument 2 passed to user_link() must be of the type array, null given, called in C:\xampp\htdocs\delcs_elective_three\app\Views\templates\sidenav.php on line 7
+#0 C:\xampp\htdocs\delcs_elective_three\app\Views\templates\sidenav.php(7): user_link('dashboard', NULL)
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('templates/siden...', NULL, true)
+#4 C:\xampp\htdocs\delcs_elective_three\app\Views\templates\index.php(8): CodeIgniter\View\View->include('templates/siden...')
+#5 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/index', Array, true)
+#8 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(50): view('templates/index', Array)
+#9 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#10 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#11 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-23 13:11:35 --> Class 'Modules\UserManagement\Models\UsersModel' not found
+#0 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Validation\Validation.php(306): App\Validation\UserRules->validateUser('password', 'username,passwo...', Array, NULL)
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('password', 'password', 'password', Array, Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(34): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#5 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-01-23 13:16:43 --> Undefined offset: 0
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-01-23 13:18:56 --> Undefined property: App\Controllers\Security::$rolePermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(40): App\Controllers\Security->setUserMethod(Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-01-23 13:20:26 --> Undefined property: App\Controllers\Security::$rolePermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(40): App\Controllers\Security->setUserMethod(Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-01-23 13:23:35 --> Undefined property: App\Controllers\Security::$rolePermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(40): App\Controllers\Security->setUserMethod(Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-01-23 13:26:24 --> Undefined property: App\Controllers\Security::$rolePermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(40): App\Controllers\Security->setUserMethod(Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-01-23 13:26:34 --> Undefined property: App\Controllers\Security::$rolePermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(40): App\Controllers\Security->setUserMethod(Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-01-23 13:33:32 --> Undefined property: App\Controllers\Security::$rolePermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\app\Controllers\Security.php(40): App\Controllers\Security->setUserMethod(Array)
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#3 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-01-23 13:34:33 --> Class 'Modules\Users\Models\UsersModel' not found
+#0 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(907): Modules\DashboardManagement\Controllers\Dashboard->__construct()
+#1 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\delcs_elective_three\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\delcs_elective_three\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}

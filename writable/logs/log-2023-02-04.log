@@ -1,0 +1,8 @@
+CRITICAL - 2023-02-04 20:28:30 --> Undefined property: Modules\UserManagement\Controllers\RolesPermissions::$rolesPermissionsModel
+#0 C:\xampp\htdocs\delcs_elective_three\project_elective\modules\UserManagement\Controllers\RolesPermissions.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\delcs_elective_three\project_elective\vendor\codeigniter4\framework\system\CodeIgniter.php(935): Modules\UserManagement\Controllers\RolesPermissions->index()
+#2 C:\xampp\htdocs\delcs_elective_three\project_elective\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(Modules\UserManagement\Controllers\RolesPermissions))
+#3 C:\xampp\htdocs\delcs_elective_three\project_elective\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\delcs_elective_three\project_elective\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\delcs_elective_three\project_elective\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}

@@ -1,0 +1,127 @@
+
+.select2-selection__choice {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    background-color: #0e252d !important;
+    color: rgb(238, 231, 231) !important;
+    border: none !important;
+    border-radius: 3px !important;
+}
+.select2-results__option[aria-selected="true"] {
+    background-color: #eee !important; 
+}
+.ui-datepicker-calendar {
+    display: none;
+}
+.ui-datepicker-month {
+    display: none;
+}
+.ui-datepicker-next,.ui-datepicker-prev {
+    display:none;
+}
+/* maintenance/menu ingredients css for accordion transition */
+.panel {
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    /* height: 0; */
+    overflow: hidden;
+}
+.card-menu-image-style {
+    width: 65px;
+    height: 65px;
+}
+.menu-image-style {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    margin: 6px;
+}
+#quantity-resize-contents{
+    max-width: 150px;
+}
+#menu-list-hover{
+    border: 2px solid gray;
+    margin-right: 0px;
+}
+#menu-list-hover:hover{
+    border: 2px solid #0FCD0F;
+}
+#image-resize-height{
+    height: 120px;
+}
+#resize-card-contents{
+    margin-right: 2px;
+}
+#fullscreenOpenAdminMenu, #fullscreenCloseAdminMenu{
+    padding: 5px;
+}
+#fullscreenOpenAdminMenu .mdi, #fullscreenCloseAdminMenu .mdi{
+    font-size: 50px;
+}
+#fullscreenOpenOrders, #fullscreenCloseOrders{
+    padding: 5px;
+}
+#fullscreenOpenOrders .mdi, #fullscreenCloseOrders .mdi{
+    font-size: 50px;
+}
+@media (max-width: 768px) {
+    #resizeContentButton{
+        font-size: 8px;
+        padding: 5px;
+    }
+    #image-resize-height{
+        height: 100px;
+    }
+    #menuCardBodyResize{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #resize-card-contents{
+        width: 180px;
+        font-size: 10px;
+    }
+    #menuCartTitle{
+        font-size: 12px;
+    }
+    #addToCartButton{
+        font-size: 8px;
+        padding: 5px;
+    }
+    .card-menu-image-style {
+        width: 45px;
+        height: 45px;
+    }
+    .menu-image-style {
+        width: 30px;
+        height: 30px;
+        object-fit: fill;
+        margin: 6px;
+    }
+    #resize-contents{
+        font-size: 8px;
+    }
+    #resize-contents p{
+        font-size: 8px;
+    }
+    #minusButton{
+        font-size: 8px;
+        padding: 5px;
+    }
+    #plusButton{
+        font-size: 8px;
+        padding: 5px;
+    }
+    #deletePerCartButton{
+        font-size: 8px;
+        padding: 5px;
+    }
+    #inputQuantityValue, .inputQuantityValue, #order_user_discount_id, 
+    #payment_method, #order_type, #error_payment_method, #error_order_type{
+        font-size: 8px;
+    }
+}
