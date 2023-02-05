@@ -41,6 +41,17 @@ class UsersModel extends BaseModel
         return $data;
     }
 
+    public function getDetailsForSelectOption($condition = []) {
+        $this->select('users.first_name, users.last_name, users.id, roles.role_name, users.role_id');
+        $this->join('roles', ' roles.id = users.role_id');
+        
+        foreach($condition as $field => $value){
+            $this->where($field, $value);
+        }
+
+        return $this->findAll();  
+    }
+
     public function getDetails($condition = []) {
         $this->select('users.*, roles.role_name, permissions.slug');
         $this->join('roles', ' roles.id = users.role_id');

@@ -54,7 +54,113 @@
         <script src="/assets/js/pages/demo.datatable-init.js"></script>
         <script src="/assets/js/myAlerts.js"></script>
         <script src="/assets/js/permissions.js"></script>
-
+        <script>
+            defectItemListViewReload();
+            function defectItemListViewReload(){
+                var element = $('#defect-item-list-view-reload');
+                $.ajax({
+                    url: "/defect-items/defect-item-list-view-reload",
+                    type: 'GET',
+                    data: {},
+                    success: function (html) {
+                        element.html(html);
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.responseText);
+                        console.log(thrownError);
+                    }
+                });
+            }
+            itemTaskListViewReload();
+            function itemTaskListViewReload(){
+                var element = $('#item-task-list-view-reload');
+                $.ajax({
+                    url: "/defect-items/tasks/item-task-list-view-reload",
+                    type: 'GET',
+                    data: {},
+                    success: function (html) {
+                        element.html(html);
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.responseText);
+                        console.log(thrownError);
+                    }
+                });
+            }
+            $('#task-title').keyup(function() {
+                $('#task-title').addClass('is-valid');
+            });
+            $('#task-description').keyup(function() {
+                $('#task-description').addClass('is-valid');
+            });
+            function submitNewItem(route, title, description, title_id, description_id, modal_id){
+                $.ajax({
+                    url: route,
+                    type: 'POST',
+                    data: {
+                        title : title,
+                        description : description,
+                    },
+                    cache: false,
+                    success: function (response) {
+                        if(response.status_icon == 'success'){
+                            alert_no_flash(response.status_text, response.status_icon)
+                            defectItemListViewReload();
+                            title_id.val("");
+                            description_id.val("");
+                            title_id.removeClass('is-invalid');
+                            description_id.removeClass('is-invalid');
+                            title_id.removeClass('is-valid');
+                            description_id.removeClass('is-valid');
+                            $(modal_id).modal('hide');
+                        }else{
+                            alert_no_flash(response.status_text, response.status_icon)
+                            if(response.title_and_description == ''){
+                                title_id.addClass('is-invalid');
+                                title_id.val("");
+                                description_id.addClass('is-invalid');
+                                description_id.val("");
+                            } else if(response.title == '') {
+                                title_id.addClass('is-invalid');
+                                title_id.val("");
+                                description_id.addClass('is-valid');
+                                description_id.removeClass('is-invalid');
+                            } else {
+                                title_id.removeClass('is-invalid');
+                                title_id.addClass('is-valid');
+                                description_id.addClass('is-invalid');
+                                description_id.val("");
+                            }
+                        }
+                    }
+                });
+            }
+            function submitTaskStatus(route, item_status_id, assignee_id, severity_id, start_at, modal_id){
+                const date = moment(start_at).format('YYYY-MM-DD');
+                $.ajax({
+                    url: route,
+                    type: 'POST',
+                    data: {
+                        item_status_id : item_status_id,
+                        assignee_id : assignee_id,
+                        severity_id : severity_id,
+                        start_at : date,
+                    },
+                    cache: false,
+                    success: function (response) {
+                        if(response.status_icon == 'success'){
+                            alert_no_flash(response.status_text, response.status_icon)
+                            itemTaskListViewReload();
+                            $(modal_id).modal('hide');
+                        }else{
+                            alert_no_flash(response.status_text, response.status_icon)
+                            itemTaskListViewReload();
+                            $(modal_id).modal('hide');
+                        }
+                    }
+                });
+            }
+        </script>
         <!-- third party js -->
         <script src="/assets/js/vendor/Chart.bundle.min.js"></script>
         <!-- third party js ends -->
