@@ -41,44 +41,6 @@ function alert_warning(message){
 	);
 }
 
-function alert_success_no_flash(message){
-	const Toast = Swal.mixin({
-		toast: true,
-		position: 'top-end',
-		showConfirmButton: false,
-		timer: 3000,
-		timerProgressBar: true,
-		didOpen: (toast) => {
-		  toast.addEventListener('mouseenter', Swal.stopTimer)
-		  toast.addEventListener('mouseleave', Swal.resumeTimer)
-		}
-	})
-	
-	Toast.fire({ 
-	icon: 'success',
-	title: message
-	})
-}
-
-function alert_error_no_flash(message){
-	const Toast = Swal.mixin({
-		toast: true,
-		position: 'top-end',
-		showConfirmButton: false,
-		timer: 3000,
-		timerProgressBar: true,
-		didOpen: (toast) => {
-		  toast.addEventListener('mouseenter', Swal.stopTimer)
-		  toast.addEventListener('mouseleave', Swal.resumeTimer)
-		}
-	  })
-	  
-	  Toast.fire({ 
-		icon: 'error',
-		title: message
-	  })
-}
-
 function alert_login_success(message){
 	 Swal.fire(
 	  'Login Success!',
@@ -113,13 +75,12 @@ function confirmDelete(route, id){
 				$.ajax({
 					url: route + id,
 					success: function (response) {
-						Swal.fire({
-							title: response.status,
-							text: response.status_text,
-							icon: response.status_icon,
-						}).then((confirm) => {
-							window.location.reload();
-						});
+                        if(response.status_icon == 'success'){
+                            alert_no_flash(response.status_text, response.status_icon)
+                            defectItemListViewReload();
+                        }else{
+                            alert_no_flash(response.status_text, response.status_icon)
+                        }
 					}
 				});
 			});

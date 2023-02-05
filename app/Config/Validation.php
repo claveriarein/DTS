@@ -99,6 +99,17 @@ class Validation
 			'label' => 'Description'
 		]
 	];
+	
+	public $defect_item = [
+		'title' => [
+			'rules' => 'required|min_length[4]|max_length[50]',
+			'label' => 'Title',
+		],
+		'description' => [
+			'rules' => 'required|min_length[5]|max_length[100]',
+			'label' => 'Description'
+		]
+	];
 
 	public $permissionTypes = [
 		'type' => [
