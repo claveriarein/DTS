@@ -1,0 +1,16 @@
+CRITICAL - 2023-02-17 17:24:42 --> Unable to connect to the database.
+#0 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 C:\Users\EDMER\Desktop\htdocs\DTS\app\Validation\UserRules.php(10): CodeIgniter\BaseModel->first()
+#5 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Validation\Validation.php(306): App\Validation\UserRules->validateUser('admin123', 'username,passwo...', Array, NULL)
+#6 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('password', 'password', 'admin123', Array, Array)
+#7 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\EDMER\Desktop\htdocs\DTS\app\Controllers\Security.php(34): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Security->index()
+#10 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Security))
+#11 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\EDMER\Desktop\htdocs\DTS\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\EDMER\Desktop\htdocs\DTS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\EDMER\\...')
+#14 {main}

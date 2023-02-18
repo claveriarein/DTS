@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 05, 2023 at 11:58 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.2.34
+-- Generation Time: Feb 18, 2023 at 07:15 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -51,9 +51,12 @@ CREATE TABLE `defect_items` (
 INSERT INTO `defect_items` (`id`, `item_code`, `title`, `description`, `reporter_id`, `item_status_id`, `start_at`, `end_at`, `assignee_id`, `severity_id`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'IC1234', 'Navigation bugs', 'Not responsive navigation', 3, 'DONE', '2023-02-05', '2023-02-05', 2, 'MEDIUM', 'a', '2023-02-03 13:56:55', '2023-02-05 18:51:08', '0000-00-00 00:00:00'),
 (2, 'IC4325', 'Font size title', 'Change font size of title', 3, 'ONGOING', '2023-02-03', NULL, 2, 'MEDIUM', 'a', '2023-02-03 13:58:09', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(3, 'IC7877', 'Navigation Bugs', 'Not Responsive Navigation', 3, 'ONHOLD', '0000-00-00', NULL, 2, 'LOW', 'a', '2023-02-03 14:33:25', '2023-02-05 18:55:58', '0000-00-00 00:00:00'),
+(3, 'IC7877', 'Navigation Bugs', 'Not Responsive Navigation', 3, 'ONGOING', '0000-00-00', NULL, 2, 'LOW', 'a', '2023-02-03 14:33:25', '2023-02-05 18:55:58', '0000-00-00 00:00:00'),
 (4, 'IC3285', 'Side bar bug', 'Can\'t highlight dropdown links when clicked', 3, 'OPEN', '2023-02-05', NULL, 2, 'LOW', 'a', '2023-02-05 13:44:40', '2023-02-05 18:12:11', '0000-00-00 00:00:00'),
-(5, '', 'Navigation Bugs', 'Not Responsive Navigation', 3, 'OPEN', NULL, NULL, 0, 'NOT_STARTED', 'd', '2023-02-05 15:21:45', '2023-02-05 15:22:57', '2023-02-05 15:22:57');
+(5, '', 'Navigation Bugs', 'Not Responsive Navigation', 3, 'OPEN', NULL, NULL, 0, 'NOT_STARTED', 'd', '2023-02-05 15:21:45', '2023-02-05 15:22:57', '2023-02-05 15:22:57'),
+(6, 'IC7806', 'Pending Reciepts', 'Can\'t Redirect To Generate Report', 2, 'ONHOLD', '2023-02-18', NULL, 2, 'MEDIUM', 'a', '2023-02-18 11:49:52', '2023-02-18 12:09:23', '0000-00-00 00:00:00'),
+(7, 'IC7395', 'No validation response', 'Need to add validation', 2, 'DONE', '2023-02-18', '2023-02-18', 2, 'LOW', 'a', '2023-02-18 12:10:43', '2023-02-18 12:51:43', '0000-00-00 00:00:00'),
+(8, 'IC2218', 'Task List ', 'File not found', 2, 'OPEN', NULL, NULL, 0, 'NOT_STARTED', 'a', '2023-02-18 12:59:04', '2023-02-18 12:59:04', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -110,7 +113,7 @@ INSERT INTO `permissions` (`id`, `module_id`, `permission_name`, `permission_typ
 (1, 1, 'dashboard', 5, 'dashboard', '&#xe002;', 'a', '2023-01-23 10:58:19', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (2, 3, 'defect items', 5, 'defect-items', '&#xe002;', 'a', '2023-01-28 14:57:03', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (3, 2, 'users', 5, 'users', '&#xe002;', 'a', '2023-01-28 14:58:04', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(4, 4, 'history', 5, 'history', '&#xe002;', 'a', '2023-01-28 14:58:41', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(4, 4, 'history', 5, 'defect-items/history', '&#xe002;', 'a', '2023-01-28 14:58:41', '2023-02-18 13:09:00', '0000-00-00 00:00:00'),
 (5, 5, 'modules', 5, 'modules', '&#xe002;', 'a', '2023-01-28 14:59:22', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (6, 2, 'roles', 5, 'roles', '&#xe002;', 'a', '2023-01-28 15:03:15', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, 2, 'role permissions', 5, 'role-permissions', '&#xe002;', 'a', '2023-01-28 15:04:30', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -487,7 +490,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `defect_items`
 --
 ALTER TABLE `defect_items`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `modules`
