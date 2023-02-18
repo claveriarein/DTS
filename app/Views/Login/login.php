@@ -4,10 +4,9 @@
         <meta charset="utf-8" />
         <title>DTS | Log In</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+        <link rel="shortcut icon" href="/assets/images/DTS_white_logo_sm.png">
         
-        <!-- App css -->
         <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
@@ -22,11 +21,11 @@
                         <div class="card">
 
                             <!-- Logo -->
-                            <!-- <div class="card-header pt-4 pb-4 text-center bg-primary">
+                            <div class="card-header pt-4 pb-4 text-center bg-primary">
                                 <a href="/">
-                                    <span><img src="/assets/images/logo.png" alt="" height="18"></span>
+                                    <span><img src="/assets/images/DTS_dark_logo_name.png" alt="" height="80"></span>
                                 </a>
-                            </div> -->
+                            </div>
 
                             <div class="card-body p-3">
                                 
@@ -82,7 +81,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            <script>document.write(new Date().getFullYear())</script> © DTS - Defect Tracker System | DELCS Development Team
+            <script>document.write(new Date().getFullYear())</script> © DTS - Defect Tracker System | DELCS Development Team & Naevis Development Team
         </footer>
 
         <!-- bundle -->

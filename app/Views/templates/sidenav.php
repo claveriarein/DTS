@@ -3,22 +3,22 @@
 <div class="leftside-menu">
 
     <!-- LOGO -->
-    <a href="index.html" class="logo text-center logo-light">
+    <a href="/" class="logo text-center logo-light">
         <span class="logo-lg">
-            <img src="/assets/images/logo.png" alt="" height="16">
+            <img src="/assets/images/DTS_white_logo.png" alt="" height="40">
         </span>
         <span class="logo-sm">
-            <img src="/assets/images/logo_sm.png" alt="" height="16">
+            <img src="/assets/images/DTS_white_logo_sm.png" alt="" height="40">
         </span>
     </a>
 
     <!-- LOGO -->
-    <a href="index.html" class="logo text-center logo-dark">
+    <a href="/" class="logo text-center logo-dark">
         <span class="logo-lg">
-            <img src="/assets/images/logo-dark.png" alt="" height="16">
+            <img src="/assets/images/DTS_white_logo.png" alt="" height="40">
         </span>
         <span class="logo-sm">
-            <img src="/assets/images/logo_sm_dark.png" alt="" height="16">
+            <img src="/assets/images/DTS_white_logo_sm.png" alt="" height="40">
         </span>
     </a>
 
@@ -38,7 +38,7 @@
 
             <li class="side-nav-item">
                 <a href="/defect-items" class="side-nav-link">
-                    <i class="uil-list-ul"></i>
+                    <i class="dripicons-checklist"></i>
                     <span> Defect Items </span>
                 </a>
             </li>
@@ -51,7 +51,7 @@
             </li>
 
             <li class="side-nav-item">
-                <a href="/history" class="side-nav-link">
+                <a href="/defect-items/history" class="side-nav-link">
                     <i class="uil-history"></i>
                     <span> History </span>
                 </a>

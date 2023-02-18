@@ -26,7 +26,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <script>document.write(new Date().getFullYear())</script> © DTS - Defect Tracker System | DELCS Development Team
+                        <script>document.write(new Date().getFullYear())</script> © DTS - Defect Tracker System | DELCS Development Team & Naevis Development Team
                     </div>
                 </div>
             </div>
@@ -40,5 +40,10 @@
     <!-- ============================================================== -->
 </div>
 <?= $this->endsection('content'); ?>
+
+<?= $this->section('totalItemStatusChart'); ?>
+    <?= $this->include('Modules\DashboardManagement\Views\dashboard\totalItemStatusChart'); ?>
+<?= $this->endsection('totalItemStatusChart'); ?>
+
 <?= $this->include('templates/notifications'); ?>
 

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card mb-2">
     <div class="card-header d-flex">
         <h4 class="card-title m-1"> Items </h4>
         <?php if(user_link('defect-items/a', session()->get('userPermissionView'))):?>
@@ -26,7 +26,7 @@
                         <th><?=  ucwords($items['title']);?></th>
                         <td><?= ucwords($items['description']);?></td>
                         <td class="text-center">
-                            <img src="/assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle me-1"
+                            <img src="/assets/img/user.jpg" alt="image" class="avatar-xs rounded-circle me-1"
                             data-bs-container="#tooltip-container" data-bs-toggle="tooltip" 
                             data-bs-placement="bottom" title="Reported by <?= ucwords($items['r_first_name'].' '.$items['r_last_name']);?>" />
                             <?= ucwords($items['r_first_name'].' '.$items['r_last_name']);?>

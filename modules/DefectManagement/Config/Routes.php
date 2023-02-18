@@ -9,4 +9,6 @@ $routes->group('defect-items',['namespace' => 'Modules\DefectManagement\Controll
     $routes->match(['get','post'],'u/(:num)', 'Item::editNewItem/$1');
     $routes->match(['get','post'],'tasks/u/(:num)', 'Item::editTaskStatus/$1');
     $routes->add('d/(:num)', 'Item::delete/$1');
+    $routes->add('history', 'Item::history');
+    $routes->add('history/item-task-list-view-history-reload', 'Item::itemTaskListViewHistoryReload');
 });

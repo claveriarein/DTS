@@ -111,7 +111,7 @@ class Item extends BaseController
 					'title' => $_POST['title'],
 					'description' => $_POST['description'],
 					'reporter_id' => $_SESSION['id'],
-					'severity_id' => '',
+					'severity_id' => 'NOT_STARTED',
 				];
 				$this->itemsModel->add($item_data);
 				$data =[
@@ -180,7 +180,7 @@ class Item extends BaseController
 				'item_status_id' => (!empty($_POST['item_status_id'])? $_POST['item_status_id'] : "OPEN"),
 				'assignee_id' => (!empty($_POST['assignee_id'])? $_POST['assignee_id'] : 0),
 				'severity_id' => (!empty($_POST['severity_id'])? $_POST['severity_id'] : "NOT_STARTED"),
-				'start_at' => (!empty($_POST['start_at'])? $_POST['start_at'] : NULL),
+				'start_at' => ($_POST['start_at'] == NULL || $_POST['start_at'] == 0 ? NULL : $_POST['start_at']),
 				'end_at' => ($_POST['item_status_id'] == "DONE" ? $this->time->format('Y-m-d') : NULL),
 			];
 			$this->itemsModel->update($id, $item_data);
@@ -204,4 +204,28 @@ class Item extends BaseController
         ];
         return $this->response->setJSON($data);
     }
+	
+	public function history() { 
+        $this->hasPermissionRedirect('defect-items/history');
+
+		$data = [
+			'page_title' => 'DTS | History',
+			'title' => 'History',
+			'view' => 'Modules\DefectManagement\Views\history\history',
+		];
+		return view('templates/index', $data);
+	}
+	
+	public function itemTaskListViewHistoryReload() { 
+		$data = [
+			'getUserList' => $this->usersModel->getUserList([
+				'users.status' => 'a'
+			]),
+			'getAllItemsPerItemStatus' => $this->itemsModel->getAllItems([
+				'defect_items.item_status_id' => "DONE",
+				'defect_items.status' => 'a',
+			]),
+		];
+		return view('Modules\DefectManagement\Views\history\tasksViewHistory', $data);
+	}
 }

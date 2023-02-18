@@ -6,18 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+        <link rel="shortcut icon" href="/assets/images/DTS_white_logo_sm.png">
 
         <link href="/assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/vendor/buttons.bootstrap5.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/vendor/select.bootstrap5.css" rel="stylesheet" type="text/css" />
-        <!-- App css -->
+
         <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
         <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
-        <!-- <link href="/assets/vendor/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" /> -->
 
         <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
     </head>
@@ -27,7 +26,6 @@
         <?= $this->rendersection('content') ?>
      
         <div class="rightbar-overlay"></div>
-        <!-- /End-bar -->
 
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -36,7 +34,6 @@
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
-        <!-- bundle -->
         <script src="/assets/js/vendor.min.js"></script>
         <script src="/assets/js/app.min.js"></script>
 
@@ -160,18 +157,27 @@
                     }
                 });
             }
+            itemTaskListViewHistoryReload();
+            function itemTaskListViewHistoryReload(){
+                var element = $('#item-task-list-view-history-reload');
+                $.ajax({
+                    url: "/defect-items/history/item-task-list-view-history-reload",
+                    type: 'GET',
+                    data: {},
+                    success: function (html) {
+                        element.html(html);
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.responseText);
+                        console.log(thrownError);
+                    }
+                });
+            }
         </script>
-        <!-- third party js -->
-        <script src="/assets/js/vendor/Chart.bundle.min.js"></script>
-        <!-- third party js ends -->
 
-        <!-- dragula js-->
-        <!-- <script src="/assets/js/vendor/dragula.min.js"></script> -->
+        <script src="/assets/js/vendor/apexcharts.min.js"></script>
 
-        <!-- demo js -->
-        <!-- <script src="/assets/js/ui/component.dragula.js"></script> -->
-        <script src="/assets/js/pages/demo.dashboard-projects.js"></script>
-        <!-- end demo js-->
+        <?= $this->rendersection('totalItemStatusChart'); ?>
         <script>
             $(document).ready(function() {
                 $('.js-example-basic-single').select2();

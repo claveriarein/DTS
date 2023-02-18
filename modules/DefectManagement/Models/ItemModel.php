@@ -40,6 +40,17 @@ class ItemModel extends BaseModel
 
         return $this->findAll();
     }    
+    
+    public function getCountStatusItems($conditions = []){
+
+        $this->select('COUNT(id) as count_status_items, item_status_id');
+
+        foreach($conditions as $field => $value){
+            $this->where([$field => $value]);
+        }
+
+        return $this->findAll();
+    }    
 
     public function generateItemCode(){
 
